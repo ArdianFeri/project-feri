@@ -2,9 +2,9 @@ import tkinter as tk
 
 def konversi():
     try:
-        suhu = float(isisuhu.get())  # Ambil angka dari input
-        f = (suhu * 9/5) + 32          # Konversi ke Fahrenheit
-        k = suhu + 273             # Konversi ke Kelvin
+        suhu = float(isisuhu.get())
+        f = (suhu * 9/5) + 32    
+        k = suhu + 273         
 
         # Tampilkan hasil
         labelHasil.config(text=f"{f:.2f} °F\n{k:.2f} K" ,bg="white")
@@ -16,7 +16,7 @@ def konversi():
 window = tk.Tk()
 window.title("Konversi Suhu")
 window.geometry("400x400")
-window.configure(background="Turquoise")
+window.configure(bg="Turquoise")
 
 
 frame = tk.Frame(window, bg="pink", padx=50, pady=40)
