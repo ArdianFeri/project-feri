@@ -42,5 +42,3 @@ button.pack(
 
 
 window.mainloop()
-
-   
