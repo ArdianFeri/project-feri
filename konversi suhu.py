@@ -6,7 +6,6 @@ def konversi():
         f = (suhu * 9/5) + 32    
         k = suhu + 273         
 
-        # Tampilkan hasil
         labelHasil.config(text=f"{f:.2f} °F\n{k:.2f} K" ,bg="white")
     except:
         labelHasil.config(text="Error (Cuma bisa pake angka)", bg="grey")   
